@@ -1,45 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Mono", monospace;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: beige;
-}
-.container {
-    font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: beige; }
+  body .container {
+    font-family: "IBM Plex Mono", monospace;
     text-align: center;
-    font-size: 40px;
-}
-.header {
-    font-size:50px;
-}
-.btn {
-    margin-top : 20px ;
-    background-color: #D2DAFF;
-    border-radius: 6px;
-    border-color: transparent;
-    width: 100px;
-    height: 40px;
-}
-.btn:hover {
-    background-color: #B1B2FF;
-}
-.place {
-    border-radius: 10px;
-    height: 30px;
-    width: 300px;
-    text-align: center;
-    margin-left: 00px;
-}
-.deadline {
-    border-radius: 10px;
-    height: 30px;
-    width: 300px;
-    text-align: center;
-}
-.todoList {
-     flex:70%;
-    width: 100%;
+    font-size: 40px; }
+    body .container header {
+      font-size: 50px; }
+    body .container .place {
+      border-radius: 10px;
+      height: 30px;
+      width: 300px;
+      text-align: center; }
+    body .container .btn {
+      margin-top: 20px;
+      background-color: #D2DAFF;
+      border-radius: 6px;
+      border-color: transparent;
+      width: 100px;
+      height: 40px; }
+    body .container .btn:hover {
+      background-color: #B1B2FF; }
+    body .container .deadline {
+      border-radius: 10px;
+      height: 30px;
+      width: 300px;
+      text-align: center; }
+    body .container .todoList {
+      flex: 70%;
+      width: 100%; }
 
-}
+/*# sourceMappingURL=app.css.map */
