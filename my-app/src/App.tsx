@@ -1,8 +1,9 @@
-import React , {useState , FC , ChangeEvent} from 'react';
+import React , {useState , FC , ChangeEvent, useEffect} from 'react';
 import "./app.scss";
 import {ITask} from "./Interfaces";
 import TodoTask from "./components/TodoTask";
 import {FiEdit} from "@react-icons/all-files/fi/FiEdit";
+import todoTask from "./components/TodoTask";
 
 const App : FC = () =>  {
      const [task,setTask] = useState<string>(""); //define state with type
@@ -21,8 +22,7 @@ const App : FC = () =>  {
      const newTask = {taskName : task , deadline:deadline};
         setTodoList([...todoList,newTask]) //Adding newTask split into in todoList
         setTask("");
-        setDeadline(0
-        );
+        setDeadline(0);
        };
   // Delete Task
   const deleteTask = (taskNameToDelete : string) : void => {
@@ -30,6 +30,8 @@ const App : FC = () =>  {
           return task.taskName !== taskNameToDelete;
       }))
   }
+  //Local Storage add
+
  return (
     <div className="App">
       <div className="container">
