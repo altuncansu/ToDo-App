@@ -15,14 +15,22 @@ const App : FC = () =>  {
        } else {
            setDeadline(Number(event.target.value)) //Change type wrapping with Number + paranthesis
        }
-    }
+    };
+ //Adding Task
     const addTask = ():void => {
-     const newTask = {taskName : task , deadline:deadline}
-        setTodoList([...todoList,newTask]) //Adding newTask split on todoList
+     const newTask = {taskName : task , deadline:deadline};
+        setTodoList([...todoList,newTask]) //Adding newTask split into in todoList
         setTask("");
-        setDeadline(0);
-    }
-    return (
+        setDeadline(0
+        );
+       };
+  // Delete Task
+  const deleteTask = (taskNameToDelete : string) : void => {
+      setTodoList(todoList.filter((task) => {
+          return task.taskName !== taskNameToDelete;
+      }))
+  }
+ return (
     <div className="App">
       <div className="container">
         <h1 className="header">TodoList App <FiEdit/></h1>
@@ -31,14 +39,14 @@ const App : FC = () =>  {
         <input type="number" placeholder="Deadline" className="deadline" name="deadline"  value={deadline} onChange={handleChange} />
         </div>
           <div>
-          <button type="submit" className="btn">Add Task</button>
+          <button type="submit" className="btn" onClick={addTask}>Add Task</button>
           </div>
-         <div className="todoList">
-             {todoList.map((task:ITask, key : number) => {
-                 return <TodoTask key={key} task={task}   />;
-             })}
-        </div>
       </div>
+        <div className="todoList">
+            {todoList.map((task:ITask, key : number) => {
+                return <TodoTask key={key} task={task} deleteTask={deleteTask}   />;
+            })}
+        </div>
     </div>
   );
 }
