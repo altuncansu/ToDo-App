@@ -8,7 +8,7 @@
 }
 body {
   width: 100%;
-  height: 100vh;
+  height:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,14 +47,13 @@ body {
       height: 60px;
       color: #FFFFFF;
       font-size: 15px;
-      margin-bottom:20px;
     }
     .btn:hover {
       background-color:#3c005a ;
       color: #FFFFFF;
     }
     .deadline {
-      border-radius: 10px;
+      border-radius: 15px;
       height: 30px;
       width: 300px;
       text-align: center;
@@ -74,13 +73,16 @@ body {
       margin-bottom: 20px;
       table {
         background-color: #10101d;
-        color:#FFFFFF;
-        text-align: center;
+        color: #FFFFFF;
         width: 100%;
-        border-radius:10px;
-      }
-      td {
-        margin-left:100px;
+        border-radius: 10px;
+        box-shadow: 5px 10px #3c005a;
+        tr {
+          width: 100px;
+          td {
+            width: 200px;
+          }
+        }
       }
     }
     .delete {
@@ -89,8 +91,7 @@ body {
         border-color: transparent;
         width: 80px;
         height: 40px;
-
-      }
+    }
       .delete:hover {
         background-color: #F675A8;
       }
