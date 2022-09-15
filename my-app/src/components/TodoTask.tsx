@@ -8,7 +8,7 @@ interface Props {
    task:ITask;
    deleteTask(taskNameToDelete:string) : void ;
 }
-const TodoTask = ({task , deleteTask}:Props) => {
+const TodoTask = ({task , deleteTask }:Props) => {
     return (
         <div className="task">
             <Table>
@@ -16,7 +16,7 @@ const TodoTask = ({task , deleteTask}:Props) => {
                 <tr>
                     <th>Task</th>
                     <th>Days</th>
-                    <th>Delete</th>
+                    <th>Completed</th>
                 </tr>
                 </thead>
                 <tbody>
