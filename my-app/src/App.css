@@ -6,7 +6,7 @@
       height: 100%; } }
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,13 +42,12 @@ body {
       width: 100px;
       height: 60px;
       color: #FFFFFF;
-      font-size: 15px;
-      margin-bottom: 20px; }
+      font-size: 15px; }
     body .container .btn:hover {
       background-color: #3c005a;
       color: #FFFFFF; }
     body .container .deadline {
-      border-radius: 10px;
+      border-radius: 15px;
       height: 30px;
       width: 300px;
       text-align: center; }
@@ -67,11 +66,13 @@ body {
       body .todoList .task table {
         background-color: #10101d;
         color: #FFFFFF;
-        text-align: center;
         width: 100%;
-        border-radius: 10px; }
-      body .todoList .task td {
-        margin-left: 100px; }
+        border-radius: 10px;
+        box-shadow: 5px 10px #3c005a; }
+        body .todoList .task table tr {
+          width: 100px; }
+          body .todoList .task table tr td {
+            width: 200px; }
     body .todoList .delete {
       background-color: #F29393;
       border-radius: 6px;

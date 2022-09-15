@@ -21,7 +21,7 @@ const TodoTask = ({task , deleteTask }:Props) => {
                 </thead>
                 <tbody>
             <tr className="content">
-                <td >{task.taskName}</td>
+                <td>{task.taskName}</td>
                 <td>{task.deadline}</td>
                 <td><button className="delete" onClick={()=>{deleteTask(task.taskName)}}><BsTrash2Fill/></button></td>
             </tr>
