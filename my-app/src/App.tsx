@@ -30,10 +30,10 @@ const App: FC = () => {
     //Adding value to browser
     function getValues() {
         const storedValues = localStorage.getItem('todoList');
-        if (!storedValues) return {
+        if (!storedValues) return [{
             Id: '',
             task: '',
-        };
+        }];
         return JSON.parse(storedValues);
     }
 
